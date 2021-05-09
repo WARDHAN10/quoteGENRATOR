@@ -3,8 +3,8 @@ import "./styles.css";
 import quotes from "./quotedatabase";
 function App() {
   const [values, setValues] = useState({
-    quote: "",
-    author: "",
+    quote: "The purpose of our lives is to be happy",
+    author: "Dalai Lama",
   });
 
   const genrandomQuote = () => {
@@ -36,10 +36,11 @@ function App() {
           <h3 className="card-title text-left">Quotes</h3>
           <hr />
           <p className="card-text text-center">
-          {values.quote}
+          "{values.quote}"
           </p>
           <p className="card-text text-center">{values.author}</p>
           <button className="btn btn-primary " onClick={onsubmit}>NEXT </button>
+
         </div>
       </div>
     </div>
